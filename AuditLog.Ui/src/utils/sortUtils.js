@@ -19,12 +19,6 @@ export const sortData = (data, key, direction, organizations) => {
       return (new Date(a[key]) - new Date(b[key])) * (direction === 'asc' ? 1 : -1);
     }
 
-    if (key === 'duration') {
-      const aVal = a[key] ? a[key].split('.')[0] : '';
-      const bVal = b[key] ? b[key].split('.')[0] : '';
-      return ((aVal > bVal) - (aVal < bVal)) * (direction === 'asc' ? 1 : -1);
-    }
-
     const aVal = a[key] || '';
     const bVal = b[key] || '';
     return ((aVal > bVal) - (aVal < bVal)) * (direction === 'asc' ? 1 : -1);
