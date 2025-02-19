@@ -32,7 +32,7 @@ const Pagination = ({
         value={pageSize} 
         onChange={e => onPageSizeChange(Number(e.target.value))}
       >
-        {[5, 10, 15, 20, 50].map(size => (
+        {[5, 10, 15, 20].map(size => (
           <option key={size} value={size}>{size} rows</option>
         ))}
       </select>
