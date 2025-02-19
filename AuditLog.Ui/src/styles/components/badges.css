@@ -1,0 +1,49 @@
+.badge {
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+  }
+  
+  .badge-added {
+    background-color: #10b981;
+  }
+  
+  .badge-deleted {
+    background-color: #ef4444;
+  }
+  
+  .badge-modified {
+    background-color: #f59e0b;
+  }
+  
+  .badge-entity {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    min-width: 120px;
+  }
+  
+  .count-badge {
+    background-color: #e5e7eb;
+    color: #4b5563;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+  }

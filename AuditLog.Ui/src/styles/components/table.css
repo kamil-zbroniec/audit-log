@@ -1,0 +1,106 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+  }
+  
+  th {
+    background-color: #f9fafb;
+    font-weight: 600;
+    color: #4b5563;
+    font-size: 0.875rem;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  
+  th:hover {
+    background-color: #f3f4f6;
+  }
+  
+  tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  button {
+    padding: 4px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #6b7280;
+    min-width: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Correlated entries specific */
+  .correlated-entry-container {
+    padding: 20px 40px;
+    background-color: #f9fafb;
+    margin: 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .correlated-entry-container h4 {
+    color: #4b5563;
+    margin-bottom: 16px;
+    font-size: 0.875rem;
+  }
+  
+  .correlated-entry-container table {
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .correlated-entry-container th,
+  .correlated-entry-container td {
+    padding: 8px 16px;
+  }
+  
+  .correlated-entry-container th:first-child,
+  .correlated-entry-container td:first-child {
+    padding-left: 0;
+  }
+  
+  .correlated-entry-container td {
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+  
+  .correlated-entry-container td:nth-child(2) {
+    font-family: monospace;  /* Makes UUID more readable */
+  }

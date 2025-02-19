@@ -1,0 +1,85 @@
+.table-container {
+    width: 95%;
+    max-width: 1800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+    align-items: flex-end;
+  }
+  
+  .right-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+  }
+  
+  .date-range-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .date-picker-wrapper {
+    width: 50%;
+  }
+  
+  .input-common {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    height: 36px;
+    line-height: 20px;
+    background-color: #fff;
+    color: #1f2937;
+  }
+  
+  .input-common:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+  }
+  
+  .loading-overlay {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .no-data-message {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 0.9rem;
+    background: #f9fafb;
+    border-radius: 6px;
+  }
+
+  select.input-common {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-container {
+      flex-direction: column;
+    }
+    
+    .right-filters {
+      width: 100%;
+    }
+  }
